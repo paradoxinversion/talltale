@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stryker-mutator/stryker/master/packages/api/schema/stryker-core.json",
+  "mutator": "javascript",
+  "packageManager": "yarn",
+  "reporters": ["html", "clear-text", "progress", "dashboard"],
+  "testRunner": "mocha",
+  "transpilers": [],
+  "testFramework": "mocha",
+  "coverageAnalysis": "perTest",
+  "mutate": [
+    "{src,lib}/**/*.js?(x)",
+    "!{src,lib}/data/**/*.js",
+    "!{src,lib}/**/__tests__/**/*.js?(x)",
+    "!{src,lib}/**/?(*.)+(spec|test).js?(x)",
+    "!{src,lib}/**/*+(Spec|Test).js?(x)",
+    "!src/numbers.js"
+  ]
+}

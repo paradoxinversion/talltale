@@ -1,5 +1,5 @@
 const numbers = require("./numbers");
-const { names } = require("./data/index");
+const names = require("./names");
 const PIRand = function () {
   this.seed = "fakeTestSeed";
 

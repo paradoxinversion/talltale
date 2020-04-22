@@ -1,4 +1,4 @@
-const numbers = require("../numbers");
+const numbers = require("../src/numbers");
 const chai = require("chai");
 const expect = chai.expect;
 describe("Numbers", function () {
@@ -11,7 +11,6 @@ describe("Numbers", function () {
   describe("numberBetweenExclusive", function () {
     it("Returns a random number", function () {
       const num = numbers.numberBetweenExclusive(5, 7);
-      console.log("n", num);
       expect(num).to.be.a("number");
       expect(num);
     });

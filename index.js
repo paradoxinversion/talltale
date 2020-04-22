@@ -1,3 +1,3 @@
-const PIRand = require("./PIRand");
+const PIRand = require("./src/PIRand");
 const piRand = new PIRand();
-console.log(piRand.names.getFirstName("ind"));
+console.log(piRand.names.getFirstName(piRand.names.names, "ind"));
