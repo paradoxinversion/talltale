@@ -19,14 +19,14 @@ const getFirstNamesByOrigin = (names, origin) => {
  * @param {Array} origins
  */
 const getFirstNamesByOrigins = (names, origins) => {
-  const nMap = {};
+  const filteredNames = {};
 
   origins.forEach((origin) => {
     if (names[origin]) {
-      nMap[origin] = { givenNames: names[origin].givenNames };
+      filteredNames[origin] = { givenNames: names[origin].givenNames };
     }
   });
-  return nMap;
+  return filteredNames;
 };
 
 const getFirstNamesByGender = (names, gender) => {
@@ -55,7 +55,6 @@ const flattenNamesMap = (names) => {
 
 const getFirstName = (names, origin, gender) => {
   let filteredNames = names;
-  debugger;
   if (origin) {
     if (Array.isArray(origin)) {
       filteredNames = getFirstNamesByOrigins(filteredNames, origin);

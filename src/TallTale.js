@@ -1,10 +1,11 @@
 const numbers = require("./numbers");
 const names = require("./names");
-const PIRand = function () {
+
+const TallTale = function () {
   this.seed = "fakeTestSeed";
 
   this.numbers = numbers;
   this.names = names;
 };
 
-module.exports = PIRand;
+module.exports = TallTale;
